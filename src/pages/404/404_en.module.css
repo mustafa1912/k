@@ -1,0 +1,60 @@
+.head {
+  font-size: 7.5em;
+  margin: 15px 0px;
+  font-weight: bold;
+}
+
+.btn {
+  border: 4px solid var(--primary);
+  color: #000;
+  z-index: 1;
+  overflow: hidden;
+  background: transparent;
+  position: relative;
+  padding: 8px 50px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: 0.5s ease;
+  font-weight: bold;
+  margin: auto;
+}
+.btn:hover {
+  color: white;
+  background: var(--primary);
+  transition: 0.5s ease;
+}
+circle {
+  animation: circle 4s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+line {
+  animation: line 4s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+}
+
+@keyframes circle {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(10px, 20px, 10px);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes line {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(-10px, -20px, -10px);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+ 

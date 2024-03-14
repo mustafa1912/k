@@ -1,0 +1,102 @@
+/* News */
+.owl_news {
+  direction: ltr;
+}
+.our_news {
+  background-color: #ebf1f3;
+  margin-top: 100px;
+}
+.our_news .news_title {
+  margin-bottom: 50px;
+  padding: 20px 40px;
+}
+.our_news .news_title .title {
+  color: var(--main-color);
+}
+.our_news .news_title .head {
+  border-right: 4px solid var(--main-color);
+  padding-right: 10px;
+}
+body:lang(en) .our_news .news_title .head {
+  border-right: 0 solid var(--main-color);
+  padding-right: 0;
+  border-left: 4px solid var(--main-color);
+  padding-left: 10px;
+}
+.our_news .img {
+  height: 250px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+.our_news .news_title .des {
+  text-align: justify;
+  color: #626262;
+  
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  overflow-y: clip;
+  -webkit-box-orient: vertical;
+  height: auto; 
+}
+.our_news .news_title .readMore_btn .btn {
+  background-color: var(--main-color);
+  color: #fff;
+  transition: var(--main-transition);
+  border: 1px solid var(--main-color);
+  border-radius: 10px;
+  padding: 10px 70px;
+}
+.our_news .news_title .readMore_btn .btn:hover {
+  background-color: #fff;
+  color: var(--main-color);
+}
+.our_news .item {
+  direction: rtl;
+}
+
+.our_news .content {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.our_news .content_info {
+  direction: rtl;
+}
+.our_news .content_title {
+  
+  color: #000;
+  -webkit-line-clamp: 1;
+  display: -webkit-box;
+  overflow-y: clip;
+  -webkit-box-orient: vertical;
+}
+.our_news .des {
+  text-align: justify; 
+   color: #626262;
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  overflow-y: clip;
+  -webkit-box-orient: vertical;
+  height: 75px;
+  overflow: hidden;
+}
+.our_news .footer {
+  color: #626262;
+}
+.our_news .owl-theme .owl-nav,
+.our_news .owl-theme .owl-dots {
+  display: none;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .our_news {
+    margin-top: 0px;
+  }
+  .our_news .news_title .des {
+    margin: 20px 0;
+  }
+  .our_news .news_title .readMore_btn {
+    text-align: end;
+  }
+}

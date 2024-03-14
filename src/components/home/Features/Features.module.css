@@ -1,0 +1,186 @@
+/* features */
+.features .feat_content .feat_title {
+  position: relative;
+  width: fit-content;
+  margin-bottom: 50px;
+}
+
+.features .feat_content .feat_title::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -15px;
+  width: 100%;
+  height: 3px;
+  background-color: var(--main-color);
+}
+
+.features .feat_content .feat_title::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  bottom: -20px;
+  right: 0;
+}
+
+.features .feat_content p {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow-y: clip;
+  -webkit-box-orient: vertical;
+}
+
+
+/* 3d button */
+
+.span {
+  position: relative;
+  display: inline-flex;
+  width: 150px;
+  height: 55px;
+  margin: 0 15px;
+  perspective: 1000px;
+}
+
+.span .btn {
+  font-size: 19px;
+  transform-style: preserve-3d;
+  transform: translateZ(-25px);
+  transition: transform .25s;
+
+}
+
+.span .btn:before,
+.span .btn:after {
+  position: absolute;
+  content: "للمزيد";
+  height: 55px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid var(--primary);
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+.span .btn:before {
+  color: #fff;
+  background: var(--primary);
+  transform: rotateY(0deg) translateZ(25px);
+}
+
+.span .btn:after {
+  border: 5px solid var(--main-color);
+  color: var(--main-color);
+  transform: rotateX(90deg) translateZ(25px);
+}
+
+.span .btn:hover {
+  transform: translateZ(-25px) rotateX(-90deg);
+}
+
+/* end 3d */
+
+.features .icon_content i {
+  color: #fff;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 20px;
+}
+
+.features .icon_content .icon_title {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow-y: clip;
+  -webkit-box-orient: vertical;
+  height: 50px;
+  color: #333
+}
+
+.features .icon_content p {
+  text-align: justify;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow-y: clip;
+  -webkit-box-orient: vertical;
+}
+
+.shadow_features {
+  position: relative;
+  box-shadow: -10px 10px rgb(5 134 188 / 20%);
+  transition: 0.5s;
+}
+
+.shadow_features.even {
+  box-shadow: -10px 10px rgb(253 106 4 / 30%);
+}
+
+.shadow_features.even .readMore_btn .btn {
+  background-color: white;
+  color: var(--main-color);
+  border: 1px solid var(--main-color);
+}
+
+.shadow_features .readMore_btn .btn {
+  background-color: white;
+  color: rgb(5 134 188 / 100%);
+  border: 1px solid rgb(5 134 188 / 100%);
+}
+
+.shadow_features::before,
+.shadow_features.even::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 0%;
+  bottom: 0;
+  left: 0;
+  background: rgb(5 134 188 / 20%);
+  transition: 0.5s;
+  border-radius: 4px;
+}
+
+.shadow_features.even::before {
+  background: rgb(253 106 4 / 30%);
+}
+
+.shadow_features:hover {
+  box-shadow: -0 0 rgb(5 134 188 / 20%);
+}
+
+.shadow_features.even:hover {
+  box-shadow: -0 0 rgb(253 106 4 / 30%);
+}
+
+.shadow_features:hover::before {
+  width: 100%;
+  height: 100%;
+}
+
+.shadow_features .div_img {
+  height: 60px;
+}
+
+.shadow_features .img {
+  height: 60px;
+  width: 60px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid var(--primary);
+  padding: 5px;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .features .icon_content .icon_title {
+    margin: 10px 0;
+  }
+
+  .readMore_btn {
+    text-align: end;
+  }
+}

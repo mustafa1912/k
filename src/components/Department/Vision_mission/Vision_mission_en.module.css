@@ -1,0 +1,18 @@
+.vision_mission {
+  background-color: #f7f7f6;
+}
+
+.vision_mission .vision,
+.vision_mission .mission {
+  background-color: white;
+  border-left: 5px solid var(--primary);
+  border-radius: 5px;
+}
+
+.vision_mission .head {
+  color: #fe654f;
+}
+.vision_mission .head i {
+  margin-right: 10px;
+  font-size: 20px;
+}

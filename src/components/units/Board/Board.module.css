@@ -1,0 +1,28 @@
+.img {
+  width: 150px;
+  height: 150px;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}
+
+.bg_purple_500 {
+  background-color: #a855f7 !important; 
+}
+
+.bg_indigo_500 {
+  background-color: #6366f1 !important;
+}
+
+.bg_teal_500 {
+  background-color: #14b8a6 !important;
+}
+
+.bg_primary_500 {
+  background-color: #0e7490 !important;
+  font-size: 14px;
+}
+
+.bg_info_500 {
+  background-color: #0ea5e9 !important;
+  font-size: 14px;
+}

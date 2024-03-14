@@ -1,0 +1,137 @@
+/* Departments */
+.department .department_content {
+  background-color: #fff;
+  border-radius: 20px;
+  transform: translateY(-50px);
+  box-shadow: 0px 1px 11px 9px #00000040;
+}
+
+.department .department_content_about {
+  transform: translateY(0);
+}
+
+.department .department_content .title {
+  text-align: center;
+  position: relative;
+  width: fit-content;
+}
+
+.department .department_content .title::after {
+  content: "";
+  position: absolute;
+  right: 0%;
+  bottom: -15px;
+  width: 100%;
+  height: 3px;
+  background-color: var(--main-color);
+}
+
+.department .department_content .title::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  bottom: -20px;
+  right: 0%;
+}
+
+.department img {
+  width: 100%;
+  height: 300px;
+  padding: 4px;
+  border: 1px solid #fd6a04;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: var(--main-transition);
+}
+
+@media (min-width: 320px) and (max-width: 990px) {
+  .department .department_content .title {
+    font-size: 15px;
+  }
+
+  .department img {
+    height: 250px;
+  }
+}
+
+.department img:hover {
+  transform: scale(1.05);
+}
+
+.department .title_department {
+  color: #000;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  overflow-y: clip;
+  -webkit-box-orient: vertical;
+}
+
+.department .desc {
+  text-align: justify;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  overflow-y: clip;
+  -webkit-box-orient: vertical;
+  height: 50px;
+}
+
+.department .department_content .readMore_btn {
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+
+/* 3d button */
+
+.span {
+  position: relative;
+  display: inline-flex;
+  width: 80px;
+  height: 40px;
+  margin: 0 15px;
+  perspective: 1000px;
+}
+
+.span .btn {
+  font-size: 19px;
+  transform-style: preserve-3d;
+  transform: translateZ(-25px);
+  transition: transform .25s;
+
+}
+
+.span .btn:before,
+.span .btn:after {
+  position: absolute;
+  content: "للمزيد";
+  height: 40px;
+  width: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid var(--primary);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.span .btn:before {
+  color: #fff;
+  background: var(--primary);
+  transform: rotateY(0deg) translateZ(20px);
+}
+
+.span .btn:after {
+  border: 5px solid var(--main-color);
+  color: var(--main-color);
+  transform: rotateX(90deg) translateZ(20px);
+}
+
+.span .btn:hover {
+  transform: translateZ(-25px) rotateX(-90deg);
+}
+
+/* end 3d */

@@ -1,0 +1,12 @@
+/* LandScape */
+.landscape .land_header {
+  text-align: right;
+}
+.landscape .land_header .img {
+  height: 150px;
+}
+@media (min-width: 320px) and (max-width: 990px) {
+  .landscape .land_header .img {
+    height: 50px;
+  }
+}

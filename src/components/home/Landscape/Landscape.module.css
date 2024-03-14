@@ -1,0 +1,125 @@
+/* landscape */
+
+.landscape {
+  color: #fff;
+}
+
+.direction {
+  direction: rtl !important;
+}
+
+.landscape .landscape_content img {
+  height: 150px;
+  margin: 0 auto;
+  /* aspect-ratio: 1/1;
+  object-fit: cover; */
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}
+
+.landscape .landscape_content .home_title {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.landscape .landscape_content .home_desc {
+  color: white;
+  line-height: 1.5;
+  
+  font-weight: 400;
+  -webkit-line-clamp: 4;
+  display: -webkit-box;
+  overflow-y: clip;
+  -webkit-box-orient: vertical;
+}
+
+.landscape .landscape_content .read_mr .btn,
+.landscape .landscape_content .read_mr .btn_old {
+  margin-right: 20%;
+  background-color: #fff;
+  border: 1px solid var(--main-color);
+  border-radius: 8px;
+  color: var(--main-color);
+  font-weight: bold;
+  padding: 10px 40px;
+  transition: var(--main-transition);
+  white-space: nowrap;
+}
+
+.landscape .landscape_content .read_mr .btn_old {
+  border: 1px solid #fff;
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+.landscape .landscape_content .read_mr .btn:hover {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+.landscape .landscape_content .read_mr .btn_old:hover {
+  color: var(--main-color);
+  background-color: #fff;
+}
+
+.landscape .landscape_content .read_mr button {
+  font-size: 30px;
+  background-color: #fff;
+  color: var(--main-color);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: var(--main-transition);
+}
+
+.landscape .landscape_content .read_mr button:hover {
+  background-color: var(--main-color);
+  color: #fff;
+}
+
+.owl_news {
+  direction: ltr;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .landscape {
+    background-color: var(--primary);
+  }
+}
+
+@media (min-width: 768px) {
+  .landscape {
+    background-image: url(../../../assets/imgs/home-bg.webp);
+    background-size: 100% 100%;
+    background-position: right;
+  }
+
+  .landscape .landscape_content {
+    margin-top: 20px;
+    margin-right: 10px;
+  }
+
+  .landscape .landscape_img {
+    margin-top: 150px;
+  }
+}
+
+@media (min-width: 1440px) {
+  .landscape .landscape_content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-right: 50px;
+  }
+
+  .landscape .landscape_img img {
+    width: 100% !important;
+    height: 450px;
+    object-fit: contain;
+    aspect-ratio: 1/1;
+  }
+}
+ 

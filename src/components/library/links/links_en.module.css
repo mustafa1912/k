@@ -1,0 +1,21 @@
+
+.border_links {
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    transition: 0.5s;
+  }
+  
+  .border_links span {
+    font-size: 25px;
+    color: var(--primary);
+    transition: 0.5s;
+  }
+  .border_links:hover {
+    background-color: var(--primary);
+    color: white;
+    border: 2px solid white;
+  }
+  .border_links:hover span {
+    color: white;
+  }
+  

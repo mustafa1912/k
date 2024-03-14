@@ -1,0 +1,222 @@
+/* vision */
+.vision_fluid::after {
+  position: absolute;
+  content: "";
+  height: 50px;
+  width: 50px;
+  background-color: #ececec;
+  right: 0;
+  bottom: 0px;
+}
+
+.vision_fluid::before {
+  position: absolute;
+  content: "";
+  height: 50px;
+  width: 50px;
+  background-color: #ececec;
+  right: 0;
+  top: 30%;
+}
+
+.vision .vison_title {
+  margin-bottom: 10px;
+}
+
+.vision .vison_title .des {
+  position: relative;
+}
+
+.vision .vison_title .des::after {
+  position: absolute;
+  content: "";
+  height: 30px;
+  width: 30px;
+  background-color: #ececec;
+  right: 0;
+  top: 10%;
+  transform: translateX(40px);
+}
+
+.vision .misions .mision {
+  padding: 30px 20px;
+  background-color: var(--primary);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ececec;
+}
+
+.vision .misions .mision:nth-child(1) {
+  transform: translateY(-150px);
+}
+
+.vision .misions .mision:nth-child(2) {
+  transform: translateY(-100px);
+}
+
+.vision .misions .mision:nth-child(3) {
+  transform: translateY(-50px);
+}
+
+.vision .misions .mision:nth-child(4) {
+  transform: translateY(-0);
+}
+
+
+.vision .misions .mision::before {
+  content: "";
+  height: 50px;
+  width: 50px;
+  background-color: #ececec;
+  position: absolute;
+  left: 0;
+  bottom: -50px;
+}
+
+.vision .misions .mision .des {
+  color: #ececec;
+  text-align: justify;
+  -webkit-line-clamp: 5;
+  display: -webkit-box;
+  overflow-y: clip;
+  -webkit-box-orient: vertical;
+}
+
+
+.vision .goal {
+  background-color: #ececec;
+  padding: 100px 80px;
+}
+
+.vision .goal .des {
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  overflow-y: clip;
+  -webkit-box-orient: vertical;
+}
+
+.vision .misions .mision .cir {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  margin: 0 auto;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .vision .vison_title {
+    margin-bottom: 10px;
+  }
+
+  .vision .misions .mision {
+    transform: translateY(0) !important;
+  }
+
+  .vision .goal {
+    padding: 20px;
+  }
+
+  .vision .misions .mision {
+    margin-bottom: 10px;
+  }
+
+  .vision_fluid::after {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    background-color: #ececec;
+    right: 0;
+    bottom: 0px;
+  }
+
+  .vision_fluid::before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    background-color: #ececec;
+    right: 0;
+    top: 30%;
+  }
+
+
+}
+
+@media (max-width: 992px) {
+  .vision .misions .mision:nth-child(1) {
+    transform: translateY(-80px);
+  }
+
+  .vision .misions .mision:nth-child(2) {
+    transform: translateY(-60px);
+  }
+
+  .vision .misions .mision:nth-child(3) {
+    transform: translateY(-40px);
+  }
+
+  .vision .misions .mision:nth-child(4) {
+    transform: translateY(-20px);
+  }
+
+
+}
+
+
+
+
+
+@media (min-width: 767px) {
+  .vision .vison_title .head::after {
+    content: "";
+    width: 100px;
+    height: 3px;
+    background-color: var(--main-color);
+    position: absolute;
+    right: -110px;
+    top: 20px;
+  }
+
+  .vision .vison_title .head::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: var(--main-color);
+    position: absolute;
+    right: -20px;
+    top: 13px;
+  }
+
+
+
+}
+
+
+@media (min-width: 767px) and (max-width: 1023px) {
+  .vision .goal {
+    padding: 70px 50px;
+  }
+
+  .vision .misions {
+    transform: translateX(-10px);
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .vision .goal {
+    padding: 70px 50px;
+  }
+
+  .vision .misions {
+    transform: translateX(-40px);
+  }
+}
+
+@media (min-width: 1440px) {
+  .vision .vison_title {
+    width: 70%;
+  }
+}

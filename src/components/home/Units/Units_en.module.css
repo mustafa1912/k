@@ -1,0 +1,88 @@
+/* units */
+.units .unit_title .title {
+  position: relative;
+  margin-bottom: 30px;
+}
+.units .unit_title .title::after {
+  content: "";
+  position: absolute;
+  left: -10%;
+  bottom: -15px;
+  width: 120%;
+  height: 3px;
+  background-color: var(--main-color);
+}
+.units .unit_title .title::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  bottom: -20px;
+  left: -20%;
+}
+.units .unit_title .des {
+  text-align: justify;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  overflow-y: clip;
+  -webkit-box-orient: vertical;
+}
+.units .item_content {
+  position: relative;
+}
+.units .item_content::before {
+  position: absolute;
+  content: "";
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  box-shadow: #ffffff -20px -15px 0px 0px, var(--main-color) -20px -15px 0px 2px;
+}
+
+.units .item .head {
+  -webkit-line-clamp: 1;
+  display: -webkit-box;
+  overflow-y: clip;
+  -webkit-box-orient: vertical;
+}
+.units .item .readMore_btn .btn {
+  background-color: var(--main-color);
+  color: #fff;
+  font-weight: bold;
+  transition: var(--main-transition);
+  border: 1px solid var(--main-color);
+  padding:5px 20px;
+}
+.units .item .readMore_btn .btn:hover {
+  background-color: #fff;
+  color: var(--main-color);
+}
+.units .item_content .img {
+  height: 150px;
+  width: 150px !important;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 50%;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .units .unit_title .title {
+    margin-bottom: 20px;
+  }
+  .units .item_content .img {
+    height: 150px;
+    width: 150px !important;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+  }
+  .units .item_content::before {
+    height: 150px;
+    height: 150px;
+    width: 150px;
+    /* transform: translate(50px, 0); */
+  }
+  .units .item {
+    margin-bottom: 50px;
+  }
+}

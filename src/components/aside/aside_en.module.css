@@ -1,0 +1,46 @@
+/*  */
+.aside {
+  position: sticky;
+  top: 85px;
+  height: 100%;
+  box-shadow: -10px 10px 0 5px #e7e7e7;
+  background: linear-gradient(142deg, #fff, #e7e7e7);
+}
+
+@media (max-width: 768px) {
+  .aside {
+    position: relative;
+    top: 0;
+  }
+}
+
+.aside .btn {
+  border: 1px solid var(--primary);
+  font-size: 14px;
+  background-color: white;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+  z-index: 1;
+}
+
+.aside .btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0;
+  background-color: var(--main-color);
+  z-index: -1;
+  transition: all 0.8s;
+}
+
+.aside .btn:hover {
+  color: #e8e8e8;
+  border: 1px solid var(--main-color);
+}
+
+.aside .btn:hover::before {
+  width: 100%;
+}

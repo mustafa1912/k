@@ -1,0 +1,111 @@
+/* gallery */
+
+.gallery .gallery_title .head {
+  position: relative;
+  margin-bottom: 50px;
+  width: fit-content;
+  text-align: center;
+  width: fit-content;
+}
+.gallery .gallery_title .head::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: var(--main-color);
+  position: absolute;
+  right: 0px;
+  bottom: -20px;
+}
+.gallery .gallery_title .head::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  position: absolute;
+  right: -10px;
+  bottom: -25px;
+}
+.gallery .inner_banner {
+  /* background-image: url(../../../assets/imgs/gallery-inner.webp); */
+  /* background-position: center;
+  background-size: 100% 100%;
+  height: 400px; */
+  position: relative;
+  height: 450px;
+}
+.gallery .inner_banner video { 
+  width: 100%;
+  height: 100%;
+  /* left: 0;
+  top: 0; */
+  object-fit: cover;
+ }
+.gallery .inner_banner .inner_ovelay {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 50px 100px;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgb(255 255 255 / 50%);
+}
+.gallery .inner_banner .inner_ovelay .title {
+  position: relative;
+  margin-bottom: 50px;
+  width: fit-content;
+}
+.gallery .inner_banner .inner_ovelay .title::after {
+  content: "";
+  width: 100px;
+  height: 4px;
+  background-color: var(--main-color);
+  position: absolute;
+  right: 0;
+  bottom: -10px;
+}
+.gallery .inner_banner .inner_ovelay .des {
+  width: 70%;
+  text-align: justify;
+  -webkit-line-clamp: 4;
+  display: -webkit-box;
+  overflow-y: clip;
+  -webkit-box-orient: vertical;
+}
+.gallery .inner_banner .inner_ovelay .icon {
+  font-size: 35px;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--primary);
+  background-color: #fff;
+  box-shadow: 0px 6px 6px 0px #0586bc;
+  transition: var(--main-transition);
+}
+
+.gallery .inner_banner .inner_ovelay .icon:hover {
+  color: #fff;
+  background-color: var(--primary);
+  box-shadow: 0px 6px 6px 0px #fff;
+}
+
+@media (min-width: 320px) and (max-width: 990px) {
+  .gallery .inner_banner .inner_ovelay {
+    padding: 20px;
+  }
+  .gallery .inner_banner .inner_ovelay .title {
+    margin-bottom: 20px;
+  }
+  .gallery .inner_banner .inner_ovelay .des {
+    width: 100%;
+  }
+  .gallery .inner_banner .inner_ovelay .icon {
+    padding: 20px;
+  }
+}

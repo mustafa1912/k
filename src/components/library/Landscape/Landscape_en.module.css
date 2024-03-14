@@ -1,0 +1,58 @@
+.library {
+  background-image: url(../../../assets/imgs/library_bg.png);
+  background-position: center;
+  background-size: 100% 250px;
+  position: relative;
+}
+.library .custom_img {
+  height: 150px;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}
+.library .library_info .title {
+  position: relative;
+  color: white;
+  width: fit-content;
+  margin: auto;
+}
+.library .library_info .title::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: white;
+  bottom: -10px;
+  left: 0;
+}
+.library .library_info .title::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: white;
+  bottom: -5px;
+  right: 0;
+}
+.library .library_info p {
+  text-align: justify;
+  font-weight: bold;
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  overflow-y: clip;
+  -webkit-box-orient: vertical;
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+  .library {
+    background: none;
+  }
+  .library .library_info .title {
+    color: var(--primary);
+    margin-bottom: 20px;
+  }
+  .library .library_info .title::before,
+  .library .library_info .title::after {
+    background-color: var(--primary);
+  }
+}

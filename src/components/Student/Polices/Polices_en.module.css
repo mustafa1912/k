@@ -1,0 +1,53 @@
+.polices .title .head {
+  position: relative;
+  margin-bottom: 30px;
+  width: fit-content;
+}
+.polices .title .head::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: var(--main-color);
+  position: absolute;
+  left: 0px;
+  bottom: -20px;
+}
+.polices .title .head::before {
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  position: absolute;
+  left: -10px;
+  bottom: -25px;
+}
+
+.polices ul .li {
+  display: flex;
+  flex-direction: column;
+}
+.polices ul .li .des {
+  font-family: LTBukra;
+  font-weight: 400;
+  font-size: 20px;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  overflow-y: clip;
+  -webkit-box-orient: vertical;
+}
+.polices ul .li .icon {
+  color: var(--primary);
+  font-size: 30px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+
+.polices ul .li ul {
+  margin-left: 20px;
+}
+
+.polices ul .li ul .icon {
+  color: var(--main-color);
+
+}

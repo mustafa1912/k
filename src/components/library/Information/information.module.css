@@ -1,0 +1,6 @@
+/* library_information  */
+.library_information .lib_img .img:first-child {
+  height: 300px;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}

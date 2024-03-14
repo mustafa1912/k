@@ -1,0 +1,51 @@
+.Workshops_Seminars {
+  background: #f7f7f6;
+}
+
+.head_name,
+.head_doctor {
+  position: relative;
+  width: fit-content;
+  background: white;
+  color: var(--primary);
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.img {
+  position: relative;
+  height: 300px;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+  z-index: 1;
+}
+
+.div_img {
+  position: relative;
+}
+
+.div_img::before {
+  content: "";
+  position: absolute;
+  width: 40%;
+  height: 80%;
+  bottom: 0;
+  right: 0;
+  background: var(--primary);
+  border-radius: 15px;
+  z-index: 0;
+  transform: translate(10px, 0);
+}
+
+.rows:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+@media only screen and (max-width: 768px) {
+  .head_name {
+    font-size: 16px;
+  }
+
+  .head_doctor {
+    font-size: 14px;
+  }
+}

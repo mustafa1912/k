@@ -1,0 +1,18 @@
+.inst_system .inst_title {
+  margin: 0 auto;
+  text-align: center;
+  background-color: var(--primary);
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.inst_system .img {
+  height: 400px;
+  aspect-ratio: 1/1;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .inst_system .img {
+    height: 200px;
+  }
+}

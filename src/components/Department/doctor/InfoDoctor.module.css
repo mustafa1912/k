@@ -1,0 +1,9 @@
+.icon {
+  font-size: 25px;
+  /* margin-left: 10px; */
+  color: var(--primary);
+}
+.img_doctor {
+  height: 300px;
+  aspect-ratio: 1/1;
+}

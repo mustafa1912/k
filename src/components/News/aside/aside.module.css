@@ -1,0 +1,90 @@
+/* category  */
+.category .sidebar_blog {
+  background: #fff;
+  box-shadow: 0px 2px 10px 0px rgba(5, 134, 188, 0.2);
+}
+.category .sidebar_blog .blogs {
+  border-bottom: 2px solid var(--primary);
+  padding-bottom: 10px;
+  margin-top: 20px;
+}
+.category .sidebar_blog .title {
+  position: relative;
+  width: fit-content;
+  /* color: var(--main-color); */
+}
+
+.category .sidebar_blog .title::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  bottom: -20px;
+  right: 0;
+}
+.category .sidebar_blog .title::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -15px;
+  width: 100%;
+  height: 3px;
+  background-color: var(--main-color);
+}
+
+.category .sidebar_blog .sidebar_img {
+  height: 80px;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.category .sidebar_blog .title_blog {
+  font-weight: normal;
+  color: var(--primary);
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  overflow-y: clip;
+  -webkit-box-orient: vertical;
+}
+.category .sidebar_blog .cat_desc {
+  color: #626262;
+  font-size: 15px;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  overflow-y: clip;
+  -webkit-box-orient: vertical;
+}
+
+.category .sidebar_blog .lists .icon {
+  color: var(--primary);
+  font-size: 20px;
+  margin-left: 10px;
+}
+.category .sidebar_blog .lists .text_main {
+  color: #000;
+  font-size: 16px;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  overflow-y: clip;
+  -webkit-box-orient: vertical;
+  font-family: "Almarai";
+}
+.tag {
+  color: #000 !important;
+  padding: 6px 14px;
+  margin: 0 6px 8px 0;
+  border: 1px solid #dddddd !important;
+  background-color: transparent !important;
+  display: inline-block;
+  transition: 0.3s;
+  border-radius: 4px;
+  border: 1px solid var(--primary) !important;
+}
+@media (min-width: 320px) and (max-width: 990px) {
+  .category {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+}

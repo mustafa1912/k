@@ -1,0 +1,36 @@
+.bg_section {
+  background-color: #f7f7f6;
+}
+
+.card_lecture {
+  background: #dedcff73;
+  box-shadow: 0px 4px 3px 0px #0000000d;
+}
+
+.card_lecture .icon {
+  position: relative;
+  display: inline-block;
+  background: #a29fe4;
+}
+.card_lecture .img {
+  height: 80px;
+  width: 80px;
+}
+.card_lecture .img_modal {
+  height: 50px;
+  width: 50px;
+}
+.card_lecture.sec {
+  background: #9cccc966;
+}
+.card_lecture.sec .icon {
+  background: #59a19d;
+}
+.head {
+  height: 40px;
+  overflow: hidden;
+}
+.hours {
+  width: 25px;
+  height: 25px;
+}

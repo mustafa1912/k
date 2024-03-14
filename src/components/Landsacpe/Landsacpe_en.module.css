@@ -1,0 +1,26 @@
+.landscape {
+  height: 400px;
+  background-image: url(../../../assets/imgs/contact-landscape.webp);
+  background-position: center;
+  background-size: 100% 100%;
+  position: relative;
+}
+.landscape .contact_overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #f9fafac4;
+}
+.landscape .land_header .img {
+  height: 150px;
+}
+@media (min-width: 320px) and (max-width: 990px) {
+  .landscape {
+    height: 300px;
+  }
+  .landscape .land_header .img {
+    height: 50px;
+  }
+}

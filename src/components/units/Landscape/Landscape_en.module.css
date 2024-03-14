@@ -1,0 +1,44 @@
+.units_landscape {
+  height: 600px;
+  background-image: url(../../../assets/imgs/units-bg.webp);
+  background-position: center;
+  background-size: 100% 100%;
+  overflow: hidden;
+  position: relative;
+}
+.units_landscape .land_header .img {
+  height: 150px;
+}
+.units_landscape .custom_img {
+  height: 400px;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+
+}
+.units .units_info .head {
+  text-align: center;
+  color: var(--primary);
+}
+.units .units_info .des {
+  text-align: justify;
+  -webkit-line-clamp: 3;
+  display: -webkit-box;
+  overflow-y: clip;
+  -webkit-box-orient: vertical;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .units_landscape .custom_img {
+    height: auto;
+  }
+  .units_landscape {
+    height: 300px;
+  }
+}
+@media (min-width: 320px) and (max-width: 990px) {
+  .units_landscape .land_header .img {
+    height: 50px;
+  }
+  .units .units_info .des {
+    -webkit-line-clamp: 7;
+  }
+}

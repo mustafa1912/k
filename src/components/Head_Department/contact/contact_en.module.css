@@ -1,0 +1,85 @@
+.head {
+  position: relative;
+  width: fit-content;
+}
+
+.head::before {
+  position: absolute;
+  content: "";
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  bottom: -20px;
+  left: 0;
+}
+
+.head::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 3px;
+  background-color: var(--main-color);
+  bottom: -15px;
+  left: 0;
+}
+
+.col_contact {
+  color: white;
+  border: 1px solid white;
+  position: relative;
+  z-index: 2;
+}
+
+.col_contact::before {
+  position: absolute;
+  content: "";
+  width: 50px;
+  height: 50px;
+  background: var(--primary);
+  top: 0;
+  left: 0;
+  transform: translate(-50%, -50%);
+  border-radius: 4px;
+}
+
+.col_contact::after {
+  position: absolute;
+  content: "";
+  width: 80%;
+  height: 3px;
+  bottom: 0px;
+  left: 0;
+  background: var(--primary);
+  transform: translateY(15px);
+}
+
+.col_contact a i {
+  color: white;
+  border-right: 2px solid white;
+  margin-right: 10px;
+}
+
+.col_contact a span {
+  color: white;
+}
+
+.col_social {
+  background: var(--primary);
+  transform: translate(-50px, 10px) scale(1, 1.4);
+  z-index: 1;
+}
+
+.col_social .btn {
+  background: white;
+  color: var(--primary);
+  border: 1px solid white;
+  transform: scale(1, 0.7);
+  transition: 0.5s;
+}
+
+.col_social .btn:hover {
+  background: var(--primary);
+  color: white;
+}
+ 

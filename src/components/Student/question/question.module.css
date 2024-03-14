@@ -1,0 +1,18 @@
+.polices ul .li {
+  display: flex;
+}
+.polices ul .li .des {
+  font-family: LTBukra;
+  font-weight: 400;
+  font-size: 20px;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  overflow-y: clip;
+  -webkit-box-orient: vertical;
+}
+.polices ul .li .icon {
+  color: var(--primary);
+  font-size: 30px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+}

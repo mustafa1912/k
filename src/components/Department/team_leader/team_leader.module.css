@@ -1,0 +1,57 @@
+.landscape .land_header .img {
+  height: 150px;
+}
+.landscape .land_info_head {
+  position: relative;
+  width: fit-content;
+  margin-bottom: 50px;
+}
+.landscape .land_info_head::after {
+  content: "";
+  width: 350px;
+  height: 1px;
+  background-color: #000;
+  position: absolute;
+  right: 0;
+  bottom: -5px;
+}
+.landscape .land_info_head .img {
+  height: 100px;
+  margin-left: 20px;
+}
+.landscape .land_info_head .title {
+  width: 70%;
+  line-height: 1.4;
+}
+
+.landscape .boder_link {
+  border: 1px solid #0586BC;
+  color: #0586BC;
+}
+.landscape .boder_link i {
+  font-size: 22px;
+}
+.landscape .land_img .img {
+  height: 350px;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .landscape .land_info_head {
+    margin-bottom: 20px;
+  }
+  .landscape .land_img .img {
+    height: auto;
+  }
+}
+@media (min-width: 320px) and (max-width: 990px) {
+  .landscape .land_header .img {
+    height: 50px;
+  }
+  .landscape .land_info_head::after {
+    width: 90%;
+  }
+  .landscape .land_info .des {
+    width: 100%;
+  }
+}
